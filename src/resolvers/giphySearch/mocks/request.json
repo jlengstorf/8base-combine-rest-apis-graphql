@@ -1,0 +1,8 @@
+{
+  "data": {
+    "query": "corgi"
+  },
+  "headers": {
+    "x-header-1": "header value"
+  }
+}

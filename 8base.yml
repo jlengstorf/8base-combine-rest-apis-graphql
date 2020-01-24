@@ -1,0 +1,16 @@
+functions:
+  giphySearch:
+    type: resolver
+    handler:
+      code: src/resolvers/giphySearch/handler.ts
+    schema: src/resolvers/giphySearch/schema.graphql
+  randomUserEnrich:
+    type: resolver
+    handler:
+      code: src/resolvers/randomUserEnrich/handler.ts
+    schema: src/resolvers/randomUserEnrich/schema.graphql
+  enrichAndWelcome:
+    type: trigger.after
+    handler:
+      code: src/triggers/enrichAndWelcome/handler.ts
+    operation: Users.create
